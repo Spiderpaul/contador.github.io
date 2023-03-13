@@ -1,0 +1,17 @@
+.div-calcular{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn-calcular{
+    background: #f68b36;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-style: none;
+    font-weight: 600;
+    border-radius: 5px 50px 50px 5px;
+}

@@ -1,0 +1,7 @@
+.section-inputs-outputs{
+    width: 90%;
+    height: calc(100vh - 100px);
+    margin: auto;
+    display: flex;
+    align-items: center;
+}

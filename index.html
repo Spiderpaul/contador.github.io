@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/paul-ico.jpg">
+    <title>Super Contador</title>
+    <link rel="stylesheet" href="assets/css/resetearvalores.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/section.css">
+    <link rel="stylesheet" href="assets/css/div-inputs.css">
+    <link rel="stylesheet" href="assets/css/calcular.css">
+    <link rel="stylesheet" href="assets/css/div-outputs.css">
+    
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header class="div-header">
+            <img src="assets/img/Paul.jpg" alt="Caricatura Paul" class="img">
+    </header>
+    <section class="section-inputs-outputs">
+            <form class="div-inputs" action="">
+                <div class="div-monto">
+                    <label class="label" for="monto">Monto</label>
+                    <input class="input-monto" name="monto" type="number" data-monto>
+                </div>
+    
+                <div class="div-tickets">
+                    <label class="label" for="tickets">Tickets</label>
+                    <div class="div-input-btn">
+                        <input class="input-tickets" name="ticket" type="number" data-tickets>
+                        <button class="btn-tickets" type="submit" data-btn-tickets>Guardar</button>
+                    </div>
+                </div>
+                <ul class="cards-tickets" data-list>
+    
+                </ul>
+            </form>
+            
+            <div class="div-calcular">
+                <button class="btn-calcular" data-btn-calcular>Calcular</button>
+            </div>
+        <div class="div-outputs" data-resultado>
+            <div class="resultado-cabecera" data-resultado-cabecera>
+
+            </div>
+
+            <div class="resultado-lista-contenedor" data-resultado-lista>
+
+            </div>
+
+            <div class="total" data-total>
+
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
