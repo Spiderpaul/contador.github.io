@@ -1,6 +1,6 @@
 .div-inputs {
   background: white;
-  width: 40%;
+  width: 35%;
   height: 90%;
   flex-grow: 1;
   margin: 2%;
@@ -27,16 +27,18 @@
   background: white;
   color: #666163;
   margin: auto;
+  font-size: x-large;
   font-weight: 600;
 }
 
 .input-monto {
   background: #bdb8ad;
-  height: 30px;
+  height: 40px;
   margin: 0 5px 0 5px;
   border-style: none;
   border-radius: 5px;
   text-align: center;
+  font-size: x-large;
   font-weight: 600;
 }
 
@@ -47,12 +49,13 @@
 
 .input-tickets {
   background: #bdb8ad;
-  height: 30px;
+  height: 40px;
   flex-grow: 2;
   margin-left: 5px;
   border-style: none;
   border-radius: 5px;
   text-align: center;
+  font-size: x-large;
   font-weight: 600;
 }
 
@@ -60,9 +63,17 @@
   background: #f68b36;
   color: white;
   flex-grow: 1;
+  height: 40px;
   margin: 0 5px 0 5px;
   border-style: none;
   border-radius: 5px;
+  font-size: x-large;
+}
+
+.btn-tickets:hover{
+    background: #bdb8ad;
+    color: #666163;
+    cursor: pointer;
 }
 
 .cards-tickets {
@@ -98,7 +109,7 @@
   color: #666163;
   width: 95%;
   height: 10px;
-  font-size: larger;
+  font-size: x-large;
   font-weight: 600;
   font-style: normal;
 }
@@ -120,4 +131,12 @@
 
 .trashIcon:hover {
   color: #f00;
+}
+
+@media (max-width: 1200px){
+  .div-inputs{
+    width: 90%;
+    height: auto;
+    min-height: 600px;
+  }
 }

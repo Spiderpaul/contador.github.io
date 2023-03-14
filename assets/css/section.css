@@ -5,3 +5,10 @@
     display: flex;
     align-items: center;
 }
+
+@media (max-width: 1200px){
+    .section-inputs-outputs{
+        flex-direction: column;
+        height: auto;
+    }
+}
