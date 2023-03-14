@@ -22,7 +22,7 @@
 
 .resultado-monto{
     background: #bdb8ad;
-    font-size: x-large;
+    font-size: larger;
 }
 
 .resultado-lista-contenedor{
@@ -39,7 +39,7 @@
     width: 100%;
     height: auto;
     text-align: center;
-    font-size: x-large;
+    font-size: larger;
 }
 
 .resultado-elemento{
@@ -58,7 +58,7 @@
 
 .total-elemento{
     background: #bdb8ad;
-    font-size: x-large;
+    font-size: larger;
     border-radius: 0 0 10px 10px;
 }
 

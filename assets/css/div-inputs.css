@@ -27,7 +27,7 @@
   background: white;
   color: #666163;
   margin: auto;
-  font-size: x-large;
+  font-size: larger;
   font-weight: 600;
 }
 
@@ -38,7 +38,7 @@
   border-style: none;
   border-radius: 5px;
   text-align: center;
-  font-size: x-large;
+  font-size: larger;
   font-weight: 600;
 }
 
@@ -55,7 +55,7 @@
   border-style: none;
   border-radius: 5px;
   text-align: center;
-  font-size: x-large;
+  font-size: larger;
   font-weight: 600;
 }
 
@@ -67,7 +67,7 @@
   margin: 0 5px 0 5px;
   border-style: none;
   border-radius: 5px;
-  font-size: x-large;
+  font-size: larger;
 }
 
 .btn-tickets:hover{
@@ -109,7 +109,7 @@
   color: #666163;
   width: 95%;
   height: 10px;
-  font-size: x-large;
+  font-size: larger;
   font-weight: 600;
   font-style: normal;
 }

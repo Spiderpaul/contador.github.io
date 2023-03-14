@@ -9,10 +9,10 @@
 .btn-calcular{
     background: #f68b36;
     color: white;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-style: none;
-    font-size: x-large;
+    font-size: larger;
     font-weight: 600;
     margin: auto;
     border-radius: 5px 50% 50% 5px;
