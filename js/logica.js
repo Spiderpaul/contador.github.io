@@ -66,7 +66,7 @@ function sumarTicketsParaFacturas(facturas, tickets) {
     total.appendChild(totalElemento);
     resultado.appendChild(total);
 
-    totalElemento.innerHTML = `Total $${suma}`;
+    totalElemento.innerHTML = `Total $${suma.toFixed(2)}`;
   }
 }
 
