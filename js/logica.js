@@ -55,7 +55,7 @@ function sumarTicketsParaFacturas(facturas, tickets) {
 
       resultadoElemento.innerHTML = `$${tickets[indicesTicketsPorFactura[i][j]]}`
 
-      suma += parseInt(tickets[indicesTicketsPorFactura[i][j]]);
+      suma += parseFloat(tickets[indicesTicketsPorFactura[i][j]]);
     }
 
     const total = document.querySelector("[data-total]");
