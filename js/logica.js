@@ -1,5 +1,6 @@
 function sumarTicketsParaFacturas(facturas, tickets) {
   const indicesTicketsPorFactura = [];
+  let sumaTotal = 0;
 
   for (const factura of facturas) {
     let sumaTickets = 0;
@@ -11,16 +12,16 @@ function sumarTicketsParaFacturas(facturas, tickets) {
 
       for (let j = 0; j < tickets.length; j++) {
         if (i & (1 << j)) {
-          suma += parseInt(tickets[j]);
+          suma += parseFloat(tickets[j]);
           indices.push(j);
         }
       }
-      
+
       if (suma === factura) {
         indicesTickets = indices;
-        console.log(`La suma es de: ${suma}`);
         break;
       }
+
 
       if (suma > sumaTickets && suma <= factura) {
         indicesTickets = indices;
@@ -28,11 +29,11 @@ function sumarTicketsParaFacturas(facturas, tickets) {
       }
     }
 
+    sumaTotal = sumaTickets;
     indicesTicketsPorFactura.push(indicesTickets);
   }
 
   for (let i = 0; i < indicesTicketsPorFactura.length; i++) {
-    let suma = 0;
     const resultado = document.querySelector("[data-resultado]");
     const resultadoCabecera = document.querySelector("[data-resultado-cabecera]");
     const resultadoMonto = document.createElement("h3");
@@ -55,7 +56,6 @@ function sumarTicketsParaFacturas(facturas, tickets) {
 
       resultadoElemento.innerHTML = `$${tickets[indicesTicketsPorFactura[i][j]]}`
 
-      suma += parseFloat(tickets[indicesTicketsPorFactura[i][j]]);
     }
 
     const total = document.querySelector("[data-total]");
@@ -66,7 +66,7 @@ function sumarTicketsParaFacturas(facturas, tickets) {
     total.appendChild(totalElemento);
     resultado.appendChild(total);
 
-    totalElemento.innerHTML = `Total $${suma.toFixed(2)}`;
+    totalElemento.innerHTML = `Total $${sumaTotal.toFixed(2)}`;
   }
 }
 
