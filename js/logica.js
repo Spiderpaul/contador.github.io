@@ -1,6 +1,5 @@
 function sumarTicketsParaFacturas(facturas, tickets) {
   const indicesTicketsPorFactura = [];
-  let sumaTotal = 0;
 
   for (const factura of facturas) {
     let sumaTickets = 0;
@@ -29,11 +28,11 @@ function sumarTicketsParaFacturas(facturas, tickets) {
       }
     }
 
-    sumaTotal = sumaTickets;
     indicesTicketsPorFactura.push(indicesTickets);
   }
 
   for (let i = 0; i < indicesTicketsPorFactura.length; i++) {
+    let sumaTotal = 0;
     const resultado = document.querySelector("[data-resultado]");
     const resultadoCabecera = document.querySelector("[data-resultado-cabecera]");
     const resultadoMonto = document.createElement("h3");
@@ -56,6 +55,7 @@ function sumarTicketsParaFacturas(facturas, tickets) {
 
       resultadoElemento.innerHTML = `$${tickets[indicesTicketsPorFactura[i][j]]}`
 
+      sumaTotal += parseFloat(tickets[indicesTicketsPorFactura[i][j]]);
     }
 
     const total = document.querySelector("[data-total]");

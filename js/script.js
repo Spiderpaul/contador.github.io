@@ -36,8 +36,10 @@ const createTicket = (event) => {
 
 btnTicket.addEventListener("click", (event) => {
   event.preventDefault();
-  tickets.push(ticket.value);
-  createTicket();
+  if(ticket.value){
+    tickets.push(ticket.value);
+    createTicket();
+  }
 });
 
 btnCalcular.addEventListener("click", (event) => {
